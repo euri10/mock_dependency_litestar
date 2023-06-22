@@ -12,7 +12,8 @@ def new_dependency():
 
 @pytest.fixture(autouse=True)
 def mock_db():
-    return mock.patch("dependencies.some_dependency", new=new_dependency)
+    with mock.patch("mock_dependency_litestar.dependencies.some_dependency", new=new_dependency):
+        yield
 
 
 @pytest.fixture
