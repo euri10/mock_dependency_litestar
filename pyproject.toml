@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mock-dependency-litestar"
+version = "0.1.0"
+description = ""
+authors = ["euri10 <benoit.barthelet@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mock_dependency_litestar"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+litestar = "^2.0.0b1"
+pytest = "^7.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
