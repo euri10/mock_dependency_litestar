@@ -10,6 +10,7 @@ packages = [{include = "mock_dependency_litestar"}]
 python = "^3.11"
 litestar = "^2.0.0b1"
 pytest = "^7.3.2"
+lxml = "^5.2.2"
 
 
 [build-system]
